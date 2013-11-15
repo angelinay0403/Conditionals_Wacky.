@@ -7,7 +7,10 @@
 var homeWorktime = 1.5
 var tvHours = 3
 var hourstoSleep = 4
-//if the kid takes 1.5 hour doing home and 3 hours watching tv
-	if(tvHours + homeWorktime > hourstoSleep){
-	console.log("sorry, the kid has to watch less hours of T.V")
-{ 
+var earlyDismissal = true
+ //if the kid takes 1.5 hour doing home and 3 hours watching tv
+	if(tvHours + homeWorktime > hourstoSleep || earlyDismissal === true){
+	console.log("the kid can watch all the TV he or she wants!")
+}else{
+	console.log("sorry, kid can't watch too much T.V")
+}
